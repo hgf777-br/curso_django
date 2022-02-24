@@ -1,0 +1,25 @@
+name: Continuous Integration
+on: [push]
+jobs:
+  HGF-JOB:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9.8
+
+    - name: Instalar Dependências
+      run: |
+        pip install pipenv codecov
+        pipenv sync --dev
+
+    - name: Lint com flake8
+      run: |
+        pipenv run flake8 --max-line-length 127
+
+    - name: Testes com PyTest e CodeCov
+      run: |
+        pipenv run pytest libpythonpro --cov=libpythonpro
+        codecov
