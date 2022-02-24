@@ -1,4 +1,4 @@
-# Curso Django
+# Curso Django - HGF
 
 ## Código desenvolvido no módulo de Django do [Site Python Pro](www.python.pro.br)
 
