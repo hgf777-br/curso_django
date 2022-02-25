@@ -26,7 +26,7 @@ jobs:
       run: |
         pipenv run flake8 --max-line-length 127
 
-    #- name: Testes com PyTest e CodeCov
-    #  run: |
-    #    pipenv run pytest libpythonpro --cov=libpythonpro
+    - name: Testes com PyTest e CodeCov
+      run: |
+        pipenv run pytest
     #    codecov
