@@ -28,5 +28,5 @@ jobs:
 
     - name: Testes com PyTest e CodeCov
       run: |
-        pipenv run pytest
-    #    codecov
+        pipenv run pytest --cov=pypro
+        pipenv run codecov
