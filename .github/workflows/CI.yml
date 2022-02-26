@@ -21,6 +21,7 @@ jobs:
       run: |
         pip install pipenv codecov
         pipenv sync --dev
+        cp contrib/.env-sample .env
 
     - name: Lint com flake8
       run: |
