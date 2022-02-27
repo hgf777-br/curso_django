@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 import dj_database_url
 from functools import partial
-from email.policy import default
 from pathlib import Path
 from decouple import config, Csv
 
