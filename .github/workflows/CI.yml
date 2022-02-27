@@ -1,7 +1,10 @@
 name: Continuous Integration
 
 on: 
-  [push, pull_request]
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 env:
   PIPENV_VENV_IN_PROJECT: 1
@@ -10,6 +13,28 @@ env:
 jobs:
   HGF-JOB:
     runs-on: ubuntu-latest
+
+    services:
+      # Label used to access the service container
+      postgres:
+        # Docker Hub image
+        image: postgres:13.5
+        # Provide the password for postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_HOST: localhost
+          POSTGRES_DB: testdb
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          # Maps tcp port 5432 on service container to the host
+          - 5432:5432
+          
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9.8
@@ -17,11 +42,14 @@ jobs:
       with:
         python-version: 3.9.8
 
+    - name: Copiando as configuraçõs
+      run: |
+        cp contrib/.env-sample .env
+
     - name: Instalar Dependências
       run: |
         pip install pipenv codecov
         pipenv sync --dev
-        cp contrib/.env-sample .env
 
     - name: Lint com flake8
       run: |
