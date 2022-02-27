@@ -7,12 +7,14 @@ name = "pypi"
 django = "*"
 gunicorn = "*"
 python-decouple = "*"
+dj-database-url = "*"
 
 [dev-packages]
 flake8 = "*"
 pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.9"
