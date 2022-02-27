@@ -1,7 +1,7 @@
 name: Continuous Integration
 
 on: 
-  [push]
+  [push, pull_request]
 
 env:
   PIPENV_VENV_IN_PROJECT: 1
