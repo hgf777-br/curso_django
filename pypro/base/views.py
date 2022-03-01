@@ -4,4 +4,13 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('<html><body>Olá Django!</body></html>', content_type='text/html')
+    return HttpResponse("""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        Olá Django!
+    </body>
+    </html>""", content_type='text/html')
