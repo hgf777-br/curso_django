@@ -136,8 +136,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
-COLLECTFAST_STRATEGY = 'collectfast.strategies.boto3.Boto3Strategy'
-COLLECTFAST_ENABLE = False
+COLLECTFAST_ENABLED = False
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID', default=False)
 
@@ -154,7 +153,8 @@ if AWS_ACCESS_KEY_ID:  # pragma: no cover
     AWS_S3_CUSTOM_DOMAIN = None
     AWS_DEFAULT_ACL = 'private'
 
-    COLLECTFAST_ENABLE = True
+    COLLECTFAST_ENABLED = True
+    COLLECTFAST_STRATEGY = 'collectfast.strategies.boto3.Boto3Strategy'
 
     # Static Assets
 
