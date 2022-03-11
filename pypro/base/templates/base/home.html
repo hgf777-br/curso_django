@@ -1,0 +1,133 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Henrique Faria">
+    <title>Python Pro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" href={% static "img/favicons/favicon-32x32.png" %} sizes="32x32" type="image/png">
+    <link rel="icon" href={% static "img/favicons/favicon-16x16.png" %} sizes="16x16" type="image/png">
+    <link rel="manifest" href={% static "img/favicons/manifest.json" %}>
+    <link rel="icon" href={% static "img/favicons/favicon.ico" %}>
+    <meta name="theme-color" content="#7952b3">
+    
+    <!-- Custom styles for this template -->
+    <link href={% static "css/curso_django.css" %} rel="stylesheet">
+  
+  </head>
+
+  <body>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+    </svg>
+
+    <div class="container py-3">
+      <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+          <a href="{% url 'base:home' %}" class="d-flex align-items-center text-dark text-decoration-none">
+            <img src="{% static 'img/python-pro.png' %}" width="40" height="32" class="me-2" alt="logo"/>
+            <span class="fs-4">Python Pro</span>
+          </a>
+
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Features</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Enterprise</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
+            <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="row-cols-1">
+          <div class="col-md-12">
+            <div class="p-5 mb-4 bg-light rounded-3">
+              <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Curso de Python<h1> 
+                <h2>com Luciano Ramalho</h2>
+                <p>Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro 
+                  <a href="https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/">Python Fluente</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 text-center">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <img src="{% static 'img/luciano-ramalho.png'%}" alt="foto" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">Luciano Ramalho</h5>
+                <p class="card-text">
+                  Luciano Ramalho é programador Python desde 1998, Fellow da Python Software Foundation; 
+                  é sócio do Python.pro.br – uma empresa de treinamento – e cofundador do Garoa Hacker Clube, 
+                  o primeiro hackerspace do Brasil. Tem liderado equipes de desenvolvimento de software e 
+                  ministrado cursos sobre Python em empresas de mídia, bancos e para o governo federal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-8">
+            
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="pt-4 my-md-5 pt-md-4 border-top">
+        <div class="row">
+          <div class="col-12 col-md ps-4">
+            <img class="mb-2" src="{% static "img/python-pro.png" %}" alt="logo" width="24" height="19"/>
+            <small class="d-block mb-3 text-muted">&copy; {% now 'Y' %} Python Pro</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src={% static "js/bootstrap.bundle.min.js" %}></script>
+
+  </body>
+
+</html>
