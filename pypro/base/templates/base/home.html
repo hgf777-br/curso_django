@@ -18,7 +18,6 @@
     <link rel="icon" href={% static "img/favicons/favicon-16x16.png" %} sizes="16x16" type="image/png">
     <link rel="manifest" href={% static "img/favicons/manifest.json" %}>
     <link rel="icon" href={% static "img/favicons/favicon.ico" %}>
-    <meta name="theme-color" content="#7952b3">
     
     <!-- Custom styles for this template -->
     <link href={% static "css/curso_django.css" %} rel="stylesheet">
@@ -54,11 +53,39 @@
       <main>
         <div class="row-cols-1">
           <div class="col-md-12">
-            <div class="p-5 mb-4 bg-light rounded-3">
-              <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Curso de Python<h1> 
+            <div class="p-5 mb-4 rounded-3 bg-padrao">
+              <div class="container-fluid py-3">
+                <h1 class="display-4 fw-bold">Curso de Python<h1> 
                 <h2>com Luciano Ramalho</h2>
-                <p>Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro 
+                <!-- Begin Mailchimp Signup Form -->
+                <div>
+                  <h4>Entre na lista de espera</h4>
+                  <form class="row row-cols-md-auto g-3 align-items-center" action="https://inovegrafica.us14.list-manage.com/subscribe/post?u=08c418c1ad11c23aa401eba3e&amp;id=d742176fea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="col-12 col-md-5">
+                      <label for="mce-EMAIL">Email</label>
+                      <input type="email" name="EMAIL" class="form-control required" id="mce-EMAIL" placeholder="seu email">
+                    </div>
+                    <div class="col-12 col-md-5">
+                      <label for="mce-FNAME">Nome</label>
+                      <input type="text" name="FNAME" class="form-control" id="mce-FNAME" placeholder="seu nome">
+                    </div>
+                    <div class="col-12 col-md-2">
+                      <button type="submit" name="submit" class="btn btn-success btn-sm mt-4 pb-2">salvar</button>
+                    </div>
+                  </form>
+                <!--End mc_embed_signup-->
+                </div>
+                <div class="row mt-4 align-items-center">
+                  <div class="col-auto">
+                    <h5>Matrículas abertas! valor R$ 1.000,00</h5>
+                  </div>
+                  <div class="col-auto">
+                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                      data-preference-id="61445798-98b0582c-4b52-4f51-88f4-67ac6f194a90" data-source="button">
+                    </script>
+                  </div>
+                </div>
+                <p class="mt-4">Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro 
                   <a href="https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/">Python Fluente</a>.
                 </p>
               </div>
@@ -87,7 +114,7 @@
 
       </main>
 
-      <footer class="pt-4 my-md-5 pt-md-4 border-top">
+      <footer class="pt-4 my-md-5 pt-md-4 border-top. bg-padrao">
         <div class="row">
           <div class="col-12 col-md ps-4">
             <img class="mb-2" src="{% static "img/python-pro.png" %}" alt="logo" width="24" height="19"/>
