@@ -25,14 +25,6 @@
   </head>
 
   <body>
-    
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="check" viewBox="0 0 16 16">
-        <title>Check</title>
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-    </svg>
-
     <div class="container py-3">
       <header>
         <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
@@ -53,70 +45,15 @@
       <main>
         <div class="row-cols-1">
           <div class="col-md-12">
-            <div class="p-5 mb-4 rounded-3 bg-padrao">
-              <div class="container-fluid py-3">
-                <h1 class="display-4 fw-bold">Curso de Python<h1> 
-                <h2>com Luciano Ramalho</h2>
-                <!-- Begin Mailchimp Signup Form -->
-                <div>
-                  <h4>Entre na lista de espera</h4>
-                  <form class="row row-cols-md-auto g-3 align-items-center" action="https://inovegrafica.us14.list-manage.com/subscribe/post?u=08c418c1ad11c23aa401eba3e&amp;id=d742176fea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div class="col-12 col-md-5">
-                      <label for="mce-EMAIL">Email</label>
-                      <input type="email" name="EMAIL" class="form-control required" id="mce-EMAIL" placeholder="seu email">
-                    </div>
-                    <div class="col-12 col-md-5">
-                      <label for="mce-FNAME">Nome</label>
-                      <input type="text" name="FNAME" class="form-control" id="mce-FNAME" placeholder="seu nome">
-                    </div>
-                    <div class="col-12 col-md-2">
-                      <button type="submit" name="submit" class="btn btn-success btn-sm mt-4 pb-2">salvar</button>
-                    </div>
-                  </form>
-                <!--End mc_embed_signup-->
-                </div>
-                <div class="row mt-4 align-items-center">
-                  <div class="col-auto">
-                    <h5>Matrículas abertas! valor R$ 1.000,00</h5>
-                  </div>
-                  <div class="col-auto">
-                    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                      data-preference-id="61445798-98b0582c-4b52-4f51-88f4-67ac6f194a90" data-source="button">
-                    </script>
-                  </div>
-                </div>
-                <p class="mt-4">Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro 
-                  <a href="https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/">Python Fluente</a>.
-                </p>
+              <h1>Video Aperitivo: Motivação</h1>
+              <div class="embed-container mb-4">
+                  <iframe class="rounded-3" src="https://player.vimeo.com/video/688602515?h=a0a828a5ea"
+                          title="vídeo de apresentação"
+                          allow="autoplay; fullscreen; picture-in-picture">
+                  </iframe>
               </div>
-            </div>
           </div>
         </div>
-        <div class="row mb-3 text-center">
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <img src="{% static 'img/luciano-ramalho.png'%}" alt="foto" class="card-img-top"/>
-              <div class="card-body">
-                <h5 class="card-title">Luciano Ramalho</h5>
-                <p class="card-text">
-                  Luciano Ramalho é programador Python desde 1998, Fellow da Python Software Foundation; 
-                  é sócio do Python.pro.br – uma empresa de treinamento – e cofundador do Garoa Hacker Clube, 
-                  o primeiro hackerspace do Brasil. Tem liderado equipes de desenvolvimento de software e 
-                  ministrado cursos sobre Python em empresas de mídia, bancos e para o governo federal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-8">
-            <div class="embed-container">
-              <iframe class="rounded-3" src="https://player.vimeo.com/video/688602515?h=a0a828a5ea" 
-                      title="vídeo de apresentação" 
-                      allow="autoplay; fullscreen; picture-in-picture">
-              </iframe>
-            </div>
-          </div>
-        </div>
-
       </main>
 
       <footer class="pt-4 my-md-5 pt-md-4 border-top. bg-padrao">
