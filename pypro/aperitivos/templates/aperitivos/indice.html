@@ -1,0 +1,23 @@
+{% extends 'base/base.html'%}
+{% load static %}
+{% block title %}Python Pro - Videos{% endblock title %}
+{% block description %}"página com todos os videos gratuitos"{% endblock description %}>
+
+{% block main%}
+<main>
+  <div class="row-cols-1">
+    <div class="col-md-12">
+        <h1 class="mb-3">Lista de Vídeos Aperitivos</h1>
+        <div class="row-cols-1">
+          <div class=" col-md-6 list-group list-group-flush">
+            {% for video in videos %}
+              <a class="list-group-item" href="{{ video.get_absolute_url }}" >{{ video.titulo | default:'Faltando o título' }}</a>
+            {% empty %}
+              <spam class="alert alert-danger">Não foi encontrado nenhum vídeo</spam>
+            {% endfor %}
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock main%}

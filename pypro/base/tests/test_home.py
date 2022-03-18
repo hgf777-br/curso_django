@@ -18,5 +18,9 @@ def test_title(resp):
     assert_contains(resp, '<title>Python Pro - Home</title>')
 
 
+def test_email(resp):
+    assert_contains(resp, 'href="mailto:ramalho@python.pro.br"')
+
+
 def test_home_link(resp):
     assert_contains(resp, f'<a href="{reverse("base:home")}"')

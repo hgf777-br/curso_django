@@ -7,9 +7,9 @@
 <main>
   <div class="row-cols-1">
     <div class="col-md-12">
-        <h1 class="mb-3">{{ video.titulo }}</h1>
+        <h1 class="mb-3">{{ video.titulo | default:'Faltando o título' }}</h1>
         <div class="embed-container mb-3">
-            <iframe class="rounded-3" src="https://player.vimeo.com/video/{{ video.vimeo_id}}"
+            <iframe class="rounded-3" src="https://player.vimeo.com/video/{{ video.vimeo_id | default:'688602515'}}"
                     title="vídeo de apresentação"
                     allow="autoplay; fullscreen; picture-in-picture">
             </iframe>
