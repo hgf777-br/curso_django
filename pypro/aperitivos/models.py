@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
+
 class Video(models.Model):
 
     slug = models.SlugField(max_length=32)
@@ -10,6 +11,6 @@ class Video(models.Model):
 
     def get_absolute_url(self):
         return reverse('aperitivos:video', args=(self.slug,))
-    
+
     def __str__(self) -> str:
         return f'{self.titulo}'

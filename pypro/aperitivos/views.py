@@ -1,6 +1,4 @@
 from django.shortcuts import get_object_or_404, render
-from django.urls import reverse
-from django.db import models
 from pypro.aperitivos.models import Video
 
 
