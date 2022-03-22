@@ -20,6 +20,7 @@ pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
 autopep8 = "*"
+model-mommy = "*"
 
 [requires]
 python_version = "3.9"

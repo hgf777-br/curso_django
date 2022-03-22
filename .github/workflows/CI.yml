@@ -53,7 +53,7 @@ jobs:
 
     - name: Lint com flake8
       run: |
-        pipenv run flake8 --max-line-length 127
+        pipenv run flake8 --max-line-length 190
 
     - name: Testes com PyTest e CodeCov
       run: |
