@@ -1,0 +1,19 @@
+{% extends 'base/base.html'%}
+{% load static %}
+{% block title %}{{ modulo.titulo }}{% endblock title %}
+{% block description %}Página com detalhe do módulo {{ modulo.titulo }}{% endblock description %}>
+
+{% block main%}
+<main>
+  <div class="row-cols-1">
+    <div class="col-md-12">
+        <h1 class="mb-3">{{ modulo.titulo }}</h1>
+        <dl>
+          <dt>Público</dt>
+          <dd>{{ modulo.publico }}</dd>
+          <dt>Descrição</dt>
+          <dd>{{ modulo.descricao }}</dd>
+    </div>
+  </div>
+</main>
+{% endblock main%}
