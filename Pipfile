@@ -22,6 +22,7 @@ pytest-cov = "*"
 codecov = "*"
 autopep8 = "*"
 model-mommy = "*"
+model-bakery = "*"
 
 [requires]
 python_version = "3.9"
