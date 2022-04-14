@@ -7,7 +7,7 @@ class Modulo(OrderedModel):
     titulo = models.CharField(max_length=64)
     publico = models.TextField()
     descricao = models.TextField()
-    slug = models.SlugField(null=True)
+    slug = models.SlugField(unique=True)
 
     class Meta(OrderedModel.Meta):
         pass
