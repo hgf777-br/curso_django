@@ -1,0 +1,28 @@
+{% extends 'base/base.html'%}
+{% load static %}
+{% block title %}Python Pro - Aulas{% endblock title %}
+{% block description %}"página da aula"{% endblock description %}>
+
+{% block main%}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'base:home' %}">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ aula.modulo.get_absolute_url }}">{{ aula.modulo.titulo }}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ aula.titulo }}</li>
+  </ol>
+</nav>
+
+<main>
+  <div class="row-cols-1">
+    <div class="col-md-12">
+        <h1 class="mb-3">{{ aula.titulo }}</h1>
+        <div class="embed-container mb-3">
+            <iframe class="rounded-3" src="https://player.vimeo.com/video/{{ aula.vimeo_id | default:'688602515'}}"
+                title="vídeo de apresentação"
+                allow="autoplay; fullscreen; picture-in-picture">
+            </iframe>
+        </div>
+    </div>
+  </div>
+</main>
+{% endblock main%}
