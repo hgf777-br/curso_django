@@ -1,3 +1,4 @@
+from tarfile import PAX_NUMBER_FIELDS
 from typing import List
 from pypro.modulos.models import Modulo
 
@@ -13,3 +14,6 @@ def listar_modulos_ordenados() -> List[Modulo]:
 
 def encontrar_modulo(slug: str) -> Modulo:
     return Modulo.objects.get(slug=slug)
+
+def listar_aulas_de_modulo_ordenadas(modulo: Modulo):
+    return modulo.aula_set.order_by('order').all()
