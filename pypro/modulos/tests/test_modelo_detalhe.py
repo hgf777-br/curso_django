@@ -9,6 +9,7 @@ from pypro.modulos.models import Aula, Modulo
 def modulo(db):
     return baker.make(Modulo)
 
+
 @pytest.fixture
 def aulas(modulo, db):
     return baker.make(Aula, 3, modulo=modulo)
@@ -23,16 +24,20 @@ def resp(client, modulo, aulas):
 def test_titulo(resp, modulo: Modulo):
     assert_contains(resp, modulo.titulo)
 
+
 def test_descricao(resp, modulo: Modulo):
     assert_contains(resp, modulo.descricao)
+
 
 def test_publico(resp, modulo):
     assert_contains(resp, modulo.publico)
 
+
 def test_aulas_titulo(resp, aulas):
     for aula in aulas:
         assert_contains(resp, aula.titulo)
-        
+
+
 def test_aulas_link(resp, aulas):
     for aula in aulas:
         assert_contains(resp, aula.get_absolute_url())

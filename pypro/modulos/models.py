@@ -25,10 +25,10 @@ class Aula(OrderedModel):
     modulo = models.ForeignKey('Modulo', on_delete=models.PROTECT)
     vimeo_id = models.CharField(max_length=32)
     order_with_respect_to = 'modulo'
-    
+
     class Meta(OrderedModel.Meta):
         pass
-    
+
     def __str__(self) -> str:
         return self.titulo
 
