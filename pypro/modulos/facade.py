@@ -27,4 +27,4 @@ def encontrar_aula(slug: str) -> Aula:
 
 def listar_modulos_com_aulas():
     aulas_ordenadas = Aula.objects.order_by('order')
-    return Modulo.objects.prefetch_related(Prefetch ('aula_set', queryset=aulas_ordenadas, to_attr='aulas'))
+    return Modulo.objects.prefetch_related(Prefetch('aula_set', queryset=aulas_ordenadas, to_attr='aulas'))
