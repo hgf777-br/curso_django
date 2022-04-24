@@ -1,0 +1,308 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-03-21T22:51:56.489Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "hgf777@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-03-21T22:55:57.064Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Video object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-03-21T23:04:25.070Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "self.titulo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Vimeo id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-03-21T23:05:33.053Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "InstalaþÒo do Windows",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-03-21T23:49:31.901Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "VÝdeo Aperitivo: MotivaþÒo",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-04-04T17:09:55.594Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Python Birds",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-04-04T17:11:53.177Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Pytools",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-04-18T13:52:59.820Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Listas e Tuplas",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-04-18T13:53:06.997Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Git",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-04-18T13:53:22.501Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Pipenv",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-04-18T15:14:46.362Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Listas e Tuplas",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Vimeo id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-04-18T15:15:00.159Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Pipenv",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Vimeo id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-04-18T15:15:11.387Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Git",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Vimeo id\"]}}]"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1a8jnmwpizpmy9tk5zvhfwfynqbb23gb",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEwUB4u3fsNZGBAqgaS0q6M_65NutDtPefcFwu4rTVsIy9hJnZmkp1-t4jpkdsO6I7t1nnqbV3myHeFH3Twa6f8vBzu30HFUb81gihegyO0BrKQ3hkq1oKPgmxyahIlFmE9ZCkMeJpQSm2S0qCsw6LY-wPHQjbm:1neyD9:kvnMuPFSzdDESmgr6JzNdtZRd9hT13wPOaEUDseNpMs",
+        "expire_date": "2022-04-28T12:04:31.018Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4ltk80cvyp0v3iz4gw3i9fg1lte486vm",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSE8ZiC4dO83kIGhUjWQlHZl_Hdt0oVu7znnvkSkba1xG2WJM4uz0OL0uyXKj9J2wHdqty5zb-syJ7kr8qBDXjuX5-Vw_w4qjfqtc0F0EwODzYk1U8KiQoHJMnHwYMmjVgEMKJcgafQECslRNsDojXh_AAAON-0:1nWQsF:xiRl0x1J478bDW3h8q5wq4eQwkjQRtQIWte8xGTNcHs",
+        "expire_date": "2022-04-04T22:51:39.653Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eydgo4h69g2jee9vf22bmndawjcg6q78",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEwUB4u3fsNZGBAqgaS0q6M_65NutDtPefcFwu4rTVsIy9hJnZmkp1-t4jpkdsO6I7t1nnqbV3myHeFH3Twa6f8vBzu30HFUb81gihegyO0BrKQ3hkq1oKPgmxyahIlFmE9ZCkMeJpQSm2S0qCsw6LY-wPHQjbm:1ngRnm:IiZ_TqX2GCg-tZMORKj6fpwKBT6K8K9F3pIr67mGREc",
+        "expire_date": "2022-05-02T13:52:26.562Z"
+    }
+},
+{
+    "model": "base.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$pQNJ25ubivavwddW0bSR71$d3YAR6d/eM5nZEDU9snJzluN3yFr4XgqrnSlkHf+4sY=",
+        "last_login": "2022-04-18T13:52:26.535Z",
+        "is_superuser": true,
+        "first_name": "Henrique",
+        "email": "hgf777@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-03-21T22:51:05Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "aperitivos.video",
+    "pk": 1,
+    "fields": {
+        "slug": "motivacao",
+        "titulo": "VÝdeo Aperitivo: MotivaþÒo",
+        "vimeo_id": "688602515",
+        "creation": "2022-03-21T22:55:57.038Z"
+    }
+},
+{
+    "model": "aperitivos.video",
+    "pk": 2,
+    "fields": {
+        "slug": "instalacao-windows",
+        "titulo": "InstalaþÒo do Windows",
+        "vimeo_id": "689777418",
+        "creation": "2022-03-21T23:05:33.020Z"
+    }
+},
+{
+    "model": "modulos.modulo",
+    "pk": 1,
+    "fields": {
+        "order": 0,
+        "titulo": "Python Birds",
+        "publico": "ProgramaþÒo para iniciantes",
+        "descricao": "programaþÒo procedural",
+        "slug": "python-birds"
+    }
+},
+{
+    "model": "modulos.modulo",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "titulo": "Pytools",
+        "publico": "programadores intermedißrios",
+        "descricao": "Ferramentas de programaþÒo",
+        "slug": "pytools"
+    }
+},
+{
+    "model": "modulos.modulo",
+    "pk": 3,
+    "fields": {
+        "order": 2,
+        "titulo": "php",
+        "publico": "todos nos",
+        "descricao": "para dar um tempo no python",
+        "slug": "php"
+    }
+},
+{
+    "model": "modulos.modulo",
+    "pk": 4,
+    "fields": {
+        "order": 3,
+        "titulo": "C++",
+        "publico": "todos nos de novo",
+        "descricao": "para dar mais um tempo no python",
+        "slug": "c++"
+    }
+},
+{
+    "model": "modulos.aula",
+    "pk": 1,
+    "fields": {
+        "order": 0,
+        "titulo": "Listas e Tuplas",
+        "slug": "listas-e-tuplas",
+        "modulo": 1,
+        "vimeo_id": "688602515"
+    }
+},
+{
+    "model": "modulos.aula",
+    "pk": 2,
+    "fields": {
+        "order": 1,
+        "titulo": "Git",
+        "slug": "git",
+        "modulo": 2,
+        "vimeo_id": "689777418"
+    }
+},
+{
+    "model": "modulos.aula",
+    "pk": 3,
+    "fields": {
+        "order": 0,
+        "titulo": "Pipenv",
+        "slug": "pipenv",
+        "modulo": 2,
+        "vimeo_id": "688602515"
+    }
+}
+]
