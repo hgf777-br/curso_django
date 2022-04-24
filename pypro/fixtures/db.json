@@ -266,10 +266,10 @@
     "pk": 4,
     "fields": {
         "order": 3,
-        "titulo": "C++",
+        "titulo": "C",
         "publico": "todos nos de novo",
         "descricao": "para dar mais um tempo no python",
-        "slug": "c++"
+        "slug": "c"
     }
 },
 {
