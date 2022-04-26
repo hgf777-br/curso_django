@@ -16,7 +16,6 @@ sentry-sdk = "*"
 django-ordered-model = "*"
 ipython = "*"
 django-extensions = "*"
-django-dump-load-utf8 = "*"
 
 [dev-packages]
 flake8 = "*"

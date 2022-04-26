@@ -37,6 +37,8 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 AUTH_USER_MODEL = 'base.User'
 
+LOGIN_REDIRECT_URL = '/modulos/'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,7 +47,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django_dump_load_utf8',
     'collectfast',
     'django.contrib.staticfiles',
     'pypro.base',
