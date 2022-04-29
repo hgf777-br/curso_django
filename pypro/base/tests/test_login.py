@@ -12,6 +12,7 @@ def resp(client, db):
 def test_login_from_page(resp):
     assert resp.status_code == 200
 
+
 @pytest.fixture
 def usuario(db, django_user_model):
     usuario_modelo = baker.make(django_user_model)
@@ -21,26 +22,29 @@ def usuario(db, django_user_model):
     usuario_modelo.senha_plana = senha
     return usuario_modelo
 
+
 @pytest.fixture
 def resp_post(client, usuario):
     return client.post(reverse('login'), {'username': usuario.email, 'password': usuario.senha_plana})
 
+
 def test_login_redirect(resp_post):
     assert resp_post.status_code == 302
     assert resp_post.url == reverse('modulos:indice')
-    
+
 
 @pytest.fixture
 def resp_home(client, db):
     return client.get(reverse('base:home'))
 
+
 def test_botao_login(resp_home):
     assert_contains(resp_home, 'Entrar')
-    
+
 
 def test_link_login(resp_home):
     assert_contains(resp_home, reverse('login'))
-    
+
 
 @pytest.fixture
 def resp_home_com_usuario_logado(client_com_usuario_logado, db):
@@ -49,18 +53,19 @@ def resp_home_com_usuario_logado(client_com_usuario_logado, db):
 
 def test_botao_login_com_usuario_logado(resp_home_com_usuario_logado):
     assert_not_contains(resp_home_com_usuario_logado, 'Entrar')
-    
+
 
 def test_link_login_com_usuario_logado(resp_home_com_usuario_logado):
     assert_not_contains(resp_home_com_usuario_logado, reverse('login'))
-    
+
 
 def test_botao_logout_com_usuario_logado(resp_home_com_usuario_logado):
     assert_contains(resp_home_com_usuario_logado, 'Sair')
 
+
 def test_nome_do_usuario_logado(resp_home_com_usuario_logado, usuario_logado):
     assert_contains(resp_home_com_usuario_logado, usuario_logado.first_name)
-    
+
 
 def test_link_do_logout(resp_home_com_usuario_logado):
     assert_contains(resp_home_com_usuario_logado, reverse('logout'))
