@@ -1,5 +1,6 @@
 from django.urls import reverse
 from model_bakery import baker
+from pypro.django_assertions import assert_contains, assert_not_contains
 import pytest
 
 
@@ -27,3 +28,39 @@ def resp_post(client, usuario):
 def test_login_redirect(resp_post):
     assert resp_post.status_code == 302
     assert resp_post.url == reverse('modulos:indice')
+    
+
+@pytest.fixture
+def resp_home(client, db):
+    return client.get(reverse('base:home'))
+
+def test_botao_login(resp_home):
+    assert_contains(resp_home, 'Entrar')
+    
+
+def test_link_login(resp_home):
+    assert_contains(resp_home, reverse('login'))
+    
+
+@pytest.fixture
+def resp_home_com_usuario_logado(client_com_usuario_logado, db):
+    return client_com_usuario_logado.get(reverse('base:home'))
+
+
+def test_botao_login_com_usuario_logado(resp_home_com_usuario_logado):
+    assert_not_contains(resp_home_com_usuario_logado, 'Entrar')
+    
+
+def test_link_login_com_usuario_logado(resp_home_com_usuario_logado):
+    assert_not_contains(resp_home_com_usuario_logado, reverse('login'))
+    
+
+def test_botao_logout_com_usuario_logado(resp_home_com_usuario_logado):
+    assert_contains(resp_home_com_usuario_logado, 'Sair')
+
+def test_nome_do_usuario_logado(resp_home_com_usuario_logado, usuario_logado):
+    assert_contains(resp_home_com_usuario_logado, usuario_logado.first_name)
+    
+
+def test_link_do_logout(resp_home_com_usuario_logado):
+    assert_contains(resp_home_com_usuario_logado, reverse('logout'))

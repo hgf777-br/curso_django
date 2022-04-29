@@ -48,8 +48,22 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form>
-                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <form class='d-flex'>
+                            <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+                            {% if user.is_authenticated %}
+                                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">{{ user.first_name}}</a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                            <li class="dropdown-item">
+                                                <a class="btn btn-danger d-block" href="{% url 'logout' %}">Sair</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            {% else %}
+                                <a class="btn btn-secondary" href="{% url 'login' %}">Entrar</a>
+                            {% endif %}    
                         </form>
                     </div>
                 </div>
