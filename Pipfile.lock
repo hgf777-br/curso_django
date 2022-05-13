@@ -520,10 +520,10 @@
         },
         "faker": {
             "hashes": [
-                "sha256:0d5425894e098410b64aaade38a81074fa30163076251118523adf5bb44f8346",
-                "sha256:7ab2f741ef1c006ed7274a6ed75695ca8b610f78861566b599ce83c4953bf687"
+                "sha256:c6ff91847d7c820afc0a74d95e824b48aab71ddfd9003f300641e42d58ae886f",
+                "sha256:cad1f69d72a68878cd67855140b6fe3e44c11628971cd838595d289c98bc45de"
             ],
-            "version": "==13.6.0"
+            "version": "==13.11.1"
         },
         "flake8": {
             "hashes": [
