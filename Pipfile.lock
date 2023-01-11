@@ -692,11 +692,8 @@
             "version": "==2.0.1"
         },
         "toposort": {
-            "hashes": [
-                "sha256:8ed8e109e96ae30bf66da2d2155e4eb9989d9c5c743c837e37d9774a4eddd804",
-                "sha256:ddc2182c42912a440511bd7ff5d3e6a1cabc3accbc674a3258c8c41cbfbb2125"
-            ],
-            "version": "==1.7"
+            "hashes": [],
+            "version": "==1.9"
         },
         "tzdata": {
             "hashes": [
