@@ -519,11 +519,8 @@
             "version": "==0.3.1"
         },
         "faker": {
-            "hashes": [
-                "sha256:0d5425894e098410b64aaade38a81074fa30163076251118523adf5bb44f8346",
-                "sha256:7ab2f741ef1c006ed7274a6ed75695ca8b610f78861566b599ce83c4953bf687"
-            ],
-            "version": "==13.6.0"
+            "hashes": [],
+            "version": "==18.3.4"
         },
         "flake8": {
             "hashes": [
